@@ -19,7 +19,7 @@ def subscribe_intent_callback(hermes, intent_message):
     intentname = intent_message.intent.intent_name
 
     #if intentname == user_intent("whereis"):
-
+    end_session(hermes, intent_message, "Wo bist du")
 
     hermes.publish_end_session(intent_message.session_id, result_sentence)
 
